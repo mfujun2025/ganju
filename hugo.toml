@@ -7,39 +7,15 @@ summaryLength = 80
 paginate = 12
 
 [params]
-  description = "柑橘.cn：专注柑橘种植技术，从品种选择、育苗、土壤、水肥、病虫害绿色防控、修剪到采收贮藏全周期技术卡片导航，附种植大户展示墙。"
+  description = "柑橘.cn：专注柑橘种植技术，从品种选择、育苗、土壤、水肥、病虫害绿色防控、修剪到采收贮藏全周期技术，附种植大户展示墙。"
   slogan = "科学种橘，技术上墙"
 
 [menu]
   [[menu.main]]
-    name = "首页"
-    url = "/"
+    name = "种植技术"
+    url = "/jishu/"
     weight = 1
   [[menu.main]]
     name = "种植大户"
     url = "/zhongzhidahu/"
     weight = 2
-  [[menu.main]]
-    name = "品种选择"
-    url = "/pinzhong/"
-    weight = 3
-  [[menu.main]]
-    name = "病虫害图谱"
-    url = "/bingchong/"
-    weight = 4
-  [[menu.main]]
-    name = "农事日历"
-    url = "/rili/"
-    weight = 5
-  [[menu.main]]
-    name = "水肥管理"
-    url = "/shuifei/"
-    weight = 6
-  [[menu.main]]
-    name = "修剪整形"
-    url = "/xiujian/"
-    weight = 7
-  [[menu.main]]
-    name = "关于"
-    url = "/guanyu/"
-    weight = 8
