@@ -42,11 +42,13 @@ a:hover{text-decoration:underline}
 .dahu-desc{margin-top:6px}
 .more{margin-top:14px;text-align:right;font-size:14px}
 
-.tech-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0 28px;border-top:1px solid var(--line)}
-.tech-list li{display:flex;align-items:baseline;gap:10px;padding:12px 4px;border-bottom:1px solid var(--line)}
-.tech-list a{font-size:16px;font-weight:700;color:var(--green-dark);white-space:nowrap}
+.tech-group{margin-bottom:18px}
+.tech-group h3{font-size:15px;color:var(--orange);margin:14px 0 8px;font-weight:700;letter-spacing:1px}
+.tech-list{list-style:none;border-top:1px solid var(--line)}
+.tech-list li{padding:12px 4px;border-bottom:1px solid var(--line)}
+.tech-list a{display:block;font-size:16px;font-weight:700;color:var(--green-dark);margin-bottom:3px}
 .tech-list a:hover{color:var(--green)}
-.tech-list span{font-size:14px;color:var(--muted)}
+.tech-list span{display:block;font-size:14px;color:var(--muted);line-height:1.6}
 
 .page{padding:28px 16px 48px}
 .page h1{font-size:26px;margin-bottom:12px;color:var(--green-dark)}
