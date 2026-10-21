@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="wrap page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <div class="card-grid dahu-grid">
+    {{ range .Pages.ByWeight }}
+    <a class="card dahu-card" href="{{ .RelPermalink }}">
+      <h3>{{ .Title }}</h3>
+      <p class="dahu-meta"><b>产区：</b>{{ .Params.region }}</p>
+      <p class="dahu-meta"><b>主栽：</b>{{ .Params.variety }}</p>
+      <p class="dahu-meta"><b>规模：</b>{{ .Params.area }}</p>
+      <p class="dahu-desc">{{ .Description }}</p>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

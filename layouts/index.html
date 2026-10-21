@@ -2,14 +2,15 @@
 <section class="hero">
   <div class="wrap">
     <h1>柑橘.cn</h1>
-    <p class="slogan">从选种到采收，科学种橘一本通</p>
+    <p class="slogan">科学种橘，技术上墙</p>
     <p class="muted">品种选择 · 育苗繁育 · 土壤改良 · 水肥管理 · 病虫害绿色防控 · 修剪整形 · 采收贮藏</p>
   </div>
 </section>
 <section class="wrap modules">
+  <h2 class="section-title">种植技术</h2>
   <div class="card-grid">
-    <a class="card" href="/pinzhong/"><h3>品种选择</h3><p>主栽品种库：沃柑、脐橙、砂糖橘……适栽区域与引种决策</p></a>
-    <a class="card" href="/bingchong/"><h3>病虫害图谱</h3><p>黄龙病、溃疡病、红蜘蛛……一病一卡，防治方案速查</p></a>
+    <a class="card" href="/pinzhong/"><h3>品种选择</h3><p>沃柑、脐橙、砂糖橘……适栽区域与引种决策</p></a>
+    <a class="card" href="/bingchong/"><h3>病虫害图谱</h3><p>黄龙病、溃疡病、红蜘蛛……一病一卡速查</p></a>
     <a class="card" href="/rili/"><h3>农事日历</h3><p>按月推送修剪、施肥、用药关键节点</p></a>
     <a class="card" href="/yumiao/"><h3>育苗繁育</h3><p>砧木选择、嫁接、容器脱毒苗培育</p></a>
     <a class="card" href="/turang/"><h3>土壤改良</h3><p>土壤检测、pH 调节、有机质提升方案</p></a>
@@ -17,5 +18,19 @@
     <a class="card" href="/xiujian/"><h3>修剪整形</h3><p>幼树整形、结果树修剪、大小年调控</p></a>
     <a class="card" href="/shoucang/"><h3>采收贮藏</h3><p>采收标准、采后保鲜与冷链</p></a>
   </div>
+</section>
+<section class="wrap modules">
+  <h2 class="section-title">种植大户</h2>
+  <div class="card-grid dahu-grid">
+    {{ range where site.RegularPages "Section" "zhongzhidahu" }}
+    <a class="card dahu-card" href="{{ .RelPermalink }}">
+      <h3>{{ .Title }}</h3>
+      <p class="dahu-meta"><b>产区：</b>{{ .Params.region }}</p>
+      <p class="dahu-meta"><b>主栽：</b>{{ .Params.variety }}</p>
+      <p class="dahu-meta"><b>规模：</b>{{ .Params.area }}</p>
+    </a>
+    {{ end }}
+  </div>
+  <p class="more"><a href="/zhongzhidahu/">查看全部种植大户 →</a></p>
 </section>
 {{ end }}
