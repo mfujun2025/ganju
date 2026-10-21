@@ -1,1 +1,3 @@
 User-agent: *
+Allow: /
+Sitemap: https://xn--yuv39c.cn/sitemap.xml
