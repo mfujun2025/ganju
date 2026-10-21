@@ -12,10 +12,18 @@ paginate = 12
 
 [menu]
   [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
     name = "种植技术"
     url = "/jishu/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "种植大户"
     url = "/zhongzhidahu/"
-    weight = 2
+    weight = 3
+  [[menu.main]]
+    name = "关于我们"
+    url = "/guanyu/"
+    weight = 4
