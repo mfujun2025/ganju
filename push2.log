@@ -1,9 +1,0 @@
-﻿git : To https://github.com/mfujun2025/ganju.git
-所在位置 行:1 字符: 276
-+ ... go 静态站 - 8大模块/6品种/10病虫害图谱/农事日历"; git push -u origin main 2>&1 | Out-F ...
-+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (To https://gith...n2025/ganju.git:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
- * [new branch]      main -> main
-branch 'main' set up to track 'origin/main'.
