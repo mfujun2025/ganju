@@ -3,21 +3,17 @@
   <div class="wrap">
     <h1>柑橘.cn</h1>
     <p class="slogan">科学种橘，技术上墙</p>
-    <p class="muted">品种选择 · 育苗繁育 · 土壤改良 · 水肥管理 · 病虫害绿色防控 · 修剪整形 · 采收贮藏</p>
+    <p class="muted">品种栽培 · 病虫害防控 · 水肥土壤 · 修剪梢期 · 采收贮藏</p>
   </div>
 </section>
 <section class="wrap modules">
   <h2 class="section-title">种植技术</h2>
   <ul class="tech-list">
-    <li><a href="/pinzhong/">品种选择</a><span>沃柑、脐橙、砂糖橘……适栽区域与引种决策</span></li>
-    <li><a href="/yumiao/">育苗繁育</a><span>砧木选择、嫁接、容器脱毒苗培育</span></li>
-    <li><a href="/turang/">土壤改良</a><span>土壤检测、pH 调节、有机质提升方案</span></li>
-    <li><a href="/shuifei/">水肥管理</a><span>周年水肥方案与缺素诊断</span></li>
-    <li><a href="/bingchong/">病虫害绿色防控</a><span>黄龙病、溃疡病、红蜘蛛……一病一卡速查</span></li>
-    <li><a href="/xiujian/">修剪整形</a><span>幼树整形、结果树修剪、大小年调控</span></li>
-    <li><a href="/shoucang/">采收贮藏</a><span>采收标准、采后保鲜与冷链</span></li>
-    <li><a href="/rili/">农事日历</a><span>按月安排修剪、施肥、用药关键节点</span></li>
+    {{ range where site.RegularPages "Section" "articles" }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span>{{ .Description }}</span></li>
+    {{ end }}
   </ul>
+  <p class="more"><a href="/jishu/">进入技术中心 →</a></p>
 </section>
 <section class="wrap modules">
   <h2 class="section-title">种植大户</h2>
