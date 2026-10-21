@@ -1,0 +1,45 @@
+baseURL = "https://xn--yuv39c.cn/"
+languageCode = "zh-CN"
+title = "柑橘.cn - 柑橘种植技术平台"
+pluralizeListTitles = false
+enableRobotsTXT = true
+summaryLength = 80
+paginate = 12
+
+[params]
+  description = "柑橘.cn：从选种到采收，科学种橘一本通。提供柑橘品种选择、育苗繁育、土壤改良、水肥管理、病虫害绿色防控、修剪整形、采收贮藏全周期种植技术，附农事日历与病虫害图谱。"
+  slogan = "从选种到采收，科学种橘一本通"
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "品种选择"
+    url = "/pinzhong/"
+    weight = 2
+  [[menu.main]]
+    name = "病虫害图谱"
+    url = "/bingchong/"
+    weight = 3
+  [[menu.main]]
+    name = "农事日历"
+    url = "/rili/"
+    weight = 4
+  [[menu.main]]
+    name = "水肥管理"
+    url = "/shuifei/"
+    weight = 5
+  [[menu.main]]
+    name = "修剪整形"
+    url = "/xiujian/"
+    weight = 6
+  [[menu.main]]
+    name = "采收贮藏"
+    url = "/shoucang/"
+    weight = 7
+  [[menu.main]]
+    name = "问答中心"
+    url = "/wenda/"
+    weight = 8

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="wrap page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <ul class="post-list">
+    {{ range .Pages.ByWeight }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Description | default .Summary }}</p>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
